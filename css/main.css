@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    /* background-color: hsl(0, 0%, 98%);
+    color: hsl(227, 12%, 61%); */
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(0, 100%, 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    width: 150px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: hsl(227, 12%, 61%);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+header .request-button {
+    padding: 10px 20px;
+    background-color: hsl(136, 65%, 51%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* hero section */
+.hero {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 90px 10%;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 100%);
+
+}
+
+.mockup-container {
+    background-image: url('../images/bg-intro-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h1,
+.hero p {
+  flex: 1 1 auto; 
+  min-width: 0; 
+  margin-left: 10px;
+}
+
+.hero .request {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: hsl(136, 65%, 51%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero img {
+  width: 600px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: auto;
+  object-fit: contain;
+}
+
+.hero p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555555;
+}
+
+/* why choose Digitalbank section */
+.why-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 10%;
+}
+.why-choose h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(227, 12%, 61%);
+}
+
+.why-choose p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555555;
+    max-width: 600px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: hsl(227, 12%, 61%);
+}
+.card p {
+    font-size: 1em;
+    color: #555555;
+}
+
+/* latest articles section */
+.latest-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 10%;
+}   
+.latest-articles h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(227, 12%, 61%);
+}
+.latest-articles .articles {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1;
+}
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.article h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: hsl(227, 12%, 61%);
+}
+.article p {
+    font-size: 1em;
+    color: #555555;
+}
+
+/* latest articles section end */
+
+/* footer section start */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: hsl(233, 26%, 24%);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
